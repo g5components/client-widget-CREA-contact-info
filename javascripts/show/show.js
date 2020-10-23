@@ -1,11 +1,38 @@
 class ContactInfoWidget {
   constructor(config) {
+    this.configs = config;
     this.widgetId = config.widgetId;
     this.widget = $(`#${this.widgetId}`);
     this.phoneOptions = config;
     this.phoneNumber = new PhoneNumber(this.phoneOptions, `#${this.widgetId}`);
     this.initChat();
     this.initSocialLinks();
+    this.moveWidgetInDom(this.configs);
+    this.moveSocialLinks(this.configs);
+    this.movePhoneNumber(this.configs);
+  }
+
+  moveWidgetInDom(configs){
+    if (configs.insertAfter == 'true') {
+      this.widget.insertAfter(`${configs.targetElement}`);
+    }
+    if (configs.insertBefore == 'true') {
+      this.widget.insertBefore(`${configs.targetElement}`);
+    }
+  }
+
+  moveSocialLinks(configs){
+    let scopedSocial = $(`.${this.widgetId}.full-width-banner`);
+    if (configs.moveSocial == 'true') {
+      scopedSocial.prepend($(`.${this.widgetId} .social-links`));
+    }
+  }
+
+  movePhoneNumber(configs){
+    let scopedPhone = $(`.${this.widgetId}.full-width-banner`);
+    if (configs.movePhone == 'true') {
+      scopedPhone.append($(`.${this.widgetId} .phone`));
+    }
   }
 
   initChat(){

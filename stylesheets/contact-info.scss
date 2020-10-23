@@ -1,0 +1,81 @@
+.contact-info .p-organization-name,
+.contact-info .h-adr,
+.contact-info .p-street-address,
+.contact-info .p-tel,
+.contact-info .p-url {
+  display: block;
+}
+.contact-info p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-info.full-width-banner{
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 0;
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: none;
+  flex-direction: row;
+  line-height: initial;
+  .p-organization-name,
+  .h-adr,
+  .p-street-address,
+  .p-tel,
+  .p-url {
+    display: inline-block;
+  }
+  h4, p, div{
+    display: inline-block;
+    padding: 0 8px;
+  }
+  h4{
+    body &{
+      margin-bottom: 0;
+      padding-left: 8px !important;
+    }
+  }
+  .phone .number{
+    font-size: initial;
+    font-weight: initial;
+    height: initial;
+    line-height: initial;
+    margin-right: initial;
+    padding-top: initial;
+  }
+  .email > a > span,
+  .email > span,
+  .phone > span,
+  .phone > a > span {
+    line-height: revert;
+    height: initial;
+  }
+  .social-links{
+    margin-top: 0;
+    a{
+      background-color: transparent;
+      margin: 0;
+      width: 35px;
+      height: initial;
+      float: none;
+      display: inline-block;
+      &:before{
+        color: initial;
+        height: initial;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-info.full-width-banner{
+    width: 100%;
+    padding: 0 20px !important;
+    p, div{
+      margin-right: 8px;
+    }
+  }
+}

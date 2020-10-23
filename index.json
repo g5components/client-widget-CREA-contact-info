@@ -1,6 +1,6 @@
 {
-  "name": "Client-widget-CREA-contact-info-header",
-
+  "name": "Contact Info",
+  "widget_id": 9,
   "widget_type": null,
   "summary": "Business Contact Information",
   "liquid": true,
@@ -129,7 +129,67 @@
       "default_value": ""
     },
     {
+      "name": "container_width",
+      "default_value": ""
+    },
+    {
+      "name": "container_padding_lr",
+      "default_value": ""
+    },
+    {
+      "name": "display_loc_name",
+      "default_value": "true"
+    },
+    {
+      "name": "move_social",
+      "default_value": ""
+    },
+    {
+      "name": "move_phone",
+      "default_value": ""
+    },
+    {
+      "name": "insert_after_element",
+      "default_value": ""
+    },
+    {
+      "name": "insert_before_element",
+      "default_value": ""
+    },
+    {
+      "name": "target_element",
+      "default_value": ""
+    },
+    {
+      "name": "full_width_banner_style",
+      "default_value": "false"
+    },
+    {
+      "name": "horizontal_align",
+      "default_value": "flex-end"
+    },
+    {
+      "name": "vertical_divider",
+      "default_value": ""
+    },
+    {
+      "name": "element_padding",
+      "default_value": ""
+    },
+    {
+      "name": "social_element_padding",
+      "default_value": ""
+    },
+    {
+      "name": "responsive_width",
+      "default_value": "767px"
+    },
+    {
       "name": "text_color",
+      "default_value": ""
+    },
+    {
+      "name": "font_size",
       "default_value": ""
     },
     {

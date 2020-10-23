@@ -55,9 +55,52 @@
 
       <p><i>Style configurations are intended to update existing widget elements. Some themes may not support style overrides.</i></p>
 
+      <fieldset>
+        <legend>Banner Style Layout</legend>
+        <!-- Location Name Display -->
+        {{ widget.display_loc_name | edit_toggle_field: "Display Location Name", "value_or_default" }}
+
+        <!-- Prepend Social to first Element -->
+        {{ widget.move_social | edit_toggle_field: "Place Social Icons as First Element" }}
+
+        <!-- Prepend Phone to last Element -->
+        {{ widget.move_phone | edit_toggle_field: "Place Phone as Last Element" }}
+
+        <!-- Contact Info insert after target -->
+        {{ widget.insert_after_element | edit_toggle_field: "Insert Contact Info after target element" }}
+
+        <!-- Contact Info insert before target -->
+        {{ widget.insert_before_element | edit_toggle_field: "Insert Contact Info before target element" }}
+
+        <!-- Target Element for Moving widget -->
+        {{ widget.target_element | edit_text_field: "Target Element to insert Contact Info before or after" }}
+
+        {{ widget.container_width | edit_text_field: "Contact Container Width", "960px or 100% etc", "value"}}
+        {{ widget.container_padding_lr | edit_text_field: "Contact Container Padding Left / Right", "20px, or 1.5em etc", "value"}}
+
+        {% assign banner_opts = '{"no-banner":"Standard Style", "full-width-banner":"Full Width Banner"}' %}
+        {{ widget.full_width_banner_style | edit_radio_field: "Banner Layout Options", banner_opts, "value_or_default" }}
+
+        {% assign horizontal_align_opts = '{"flex-start":"Left Align", "center":"Middle Align", "flex-end":"Right Align"}' %}
+        {{ widget.horizontal_align | edit_radio_field: "Horizontal Align Options", horizontal_align_opts, "value_or_default" }}
+
+        {{ widget.element_padding | edit_text_field: "Padding Between Elements (applied to left and right)", "XXpx, XXem", "value"}}
+
+        {{ widget.social_element_padding | edit_text_field: "Padding Between Social Icon Elements (applied to left and right)", "XXpx, XXem", "value"}}
+
+        {{ widget.vertical_divider | edit_toggle_field: "Vertical Divider Between Elements" }}
+
+
+        <!-- Responsive Width -->
+        {{ widget.responsive_width | edit_text_field: "Responsive Width (px, %, or em)", "767px", "value_or_default"}}
+      </fieldset>
+
       <!-- Text Color -->
 
       {{ widget.text_color | edit_color_field: "Text Color", "example: blue" }}
+
+      {{ widget.font_size | edit_text_field: "Font Size", "1.2em" }}
+
 
       <!-- Background Color -->
 

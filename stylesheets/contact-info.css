@@ -1,10 +1,1 @@
-.contact-info .p-organization-name,
-.contact-info .h-adr,
-.contact-info .p-street-address,
-.contact-info .p-tel,
-.contact-info .p-url {
-  display: block;
-}
-.contact-info p {
-  margin-top: 0;
-}
+.contact-info .p-organization-name,.contact-info .h-adr,.contact-info .p-street-address,.contact-info .p-tel,.contact-info .p-url{display:block}.contact-info p{margin-top:0;margin-bottom:0}.contact-info.full-width-banner{width:100%;max-width:100%;padding:15px 0;justify-content:flex-end;display:flex;flex-wrap:wrap;border-left:none;flex-direction:row;line-height:initial}.contact-info.full-width-banner .p-organization-name,.contact-info.full-width-banner .h-adr,.contact-info.full-width-banner .p-street-address,.contact-info.full-width-banner .p-tel,.contact-info.full-width-banner .p-url{display:inline-block}.contact-info.full-width-banner h4,.contact-info.full-width-banner p,.contact-info.full-width-banner div{display:inline-block;padding:0 8px}body .contact-info.full-width-banner h4{margin-bottom:0;padding-left:8px !important}.contact-info.full-width-banner .phone .number{font-size:initial;font-weight:initial;height:initial;line-height:initial;margin-right:initial;padding-top:initial}.contact-info.full-width-banner .email>a>span,.contact-info.full-width-banner .email>span,.contact-info.full-width-banner .phone>span,.contact-info.full-width-banner .phone>a>span{line-height:revert;height:initial}.contact-info.full-width-banner .social-links{margin-top:0}.contact-info.full-width-banner .social-links a{background-color:transparent;margin:0;width:35px;height:initial;float:none;display:inline-block}.contact-info.full-width-banner .social-links a:before{color:initial;height:initial;line-height:initial}@media screen and (max-width: 600px){.contact-info.full-width-banner{width:100%;padding:0 20px !important}.contact-info.full-width-banner p,.contact-info.full-width-banner div{margin-right:8px}}
