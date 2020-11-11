@@ -123,9 +123,8 @@
     .{{widgetId}}.contact-info .h-adr,
     .{{widgetId}}.contact-info .u-email,
     .{{widgetId}}.contact-info .u-fax,
-    .{{widgetId}}.contact-info .g5-chat,
-    .{{widgetId}}.contact-info .social-links{
-      border-right: 3px solid {{widget.text_color.value}};
+    .{{widgetId}}.contact-info .g5-chat{
+      border-right: 2px solid {{widget.text_color.value}};
     }
     .{{widgetId}}.contact-info p:last-child,
     .{{widgetId}}.contact-info div:last-child{
@@ -241,22 +240,10 @@
       </span>
       {% endif %}
 
-      {% if widget.location_city.best_value_parsed != "" %}
+      <!-- {% if widget.location_city.best_value_parsed != "" %}
       <span class="p-locality locality">
         {{ widget.location_city.best_value_parsed | google_no_translate }}</span>,
-      {% endif %}
-
-      {% if widget.location_state.best_value != "" %}
-      <span class="p-region region">
-        {{ widget.location_state.best_value }}
-      </span>
-      {% endif %}
-
-      {% if widget.location_postal_code.best_value != "" %}
-      <span class="p-postal-code postal-code">
-        {{ widget.location_postal_code.best_value }}
-      </span>
-      {% endif %}
+      {% endif %} -->
 
       {% if widget.location_country.best_value != "" %}
       <span class="p-country-name country-name">
@@ -265,6 +252,25 @@
       {% endif %}
     </a>
   </p>
+  {% endif %}
+
+  {% if widget.location_city.best_value != blank %}
+    <p class="h-adr p-adr adr-ret adr">
+      {% if widget.location_city.best_value_parsed != "" %}
+        <span class="p-locality locality">
+          {{ widget.location_city.best_value_parsed | google_no_translate }}</span>,
+      {% endif %}
+      {% if widget.location_state.best_value != "" %}
+        <span class="p-region region">
+          {{ widget.location_state.best_value }}
+        </span>
+      {% endif %}
+      {% if widget.location_postal_code.best_value != "" %}
+        <span class="p-postal-code postal-code">
+          {{ widget.location_postal_code.best_value }}
+        </span>
+        {% endif %}
+    </p>
   {% endif %}
 
   {% if widget.location_email.best_value != "" %}

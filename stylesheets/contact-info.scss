@@ -13,13 +13,14 @@
 .contact-info.full-width-banner{
   width: 100%;
   max-width: 100%;
-  padding: 15px 0;
+  padding: 15px 30px 15px 0px;
   justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
   border-left: none;
   flex-direction: row;
   line-height: initial;
+  align-items: center;
   .p-organization-name,
   .h-adr,
   .p-street-address,
