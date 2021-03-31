@@ -1,0 +1,24 @@
+{
+  "name": "client-widget-crea-contact-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm explore cms-cli -- npm run serve -- --env.outputPath=$(pwd) --env.widgetPath=$(pwd)",
+    "build": "npm explore cms-cli -- npm run build -- --env.outputPath=$(pwd) --env.widgetPath=$(pwd)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g5components/client-widget-CREA-contact-info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g5components/client-widget-CREA-contact-info/issues"
+  },
+  "homepage": "https://github.com/g5components/client-widget-CREA-contact-info#readme",
+  "devDependencies": {
+    "cms-cli": "github:g5search/cms-cli#v1.2.0"
+  }
+}
