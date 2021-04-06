@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/g5components/client-widget-CREA-contact-info#readme",
   "devDependencies": {
-    "cms-cli": "github:g5search/cms-cli#v1.2.0"
+    "cms-cli": "github:g5search/cms-cli#v1.2.1"
   }
 }
