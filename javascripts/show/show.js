@@ -10,7 +10,7 @@ class ContactInfoWidget {
     this.moveWidgetInDom(this.configs);
     this.moveSocialLinks(this.configs);
     this.movePhoneNumber(this.configs);
-    this.setAccessiblePhoneNUmber();
+    this.setAccessiblePhoneNumber();
   }
 
   moveWidgetInDom(configs){
