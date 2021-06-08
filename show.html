@@ -88,9 +88,8 @@
       "clientUrn": "{{ widget.client_urn.value_or_default }}",
       "cpnsUrl": "{{ widget.client_cpns_url.value_or_default }}",
       "locationUrn": "{{ widget.location_urn.value_or_default }}",
-      "chatUrl": "{{ widget.location_chat_url.best_value }}",
-      "widgetId": "{{ widgetId }}",
-      "phoneNumber": "{{ widget.location_tel.best_value }}",
+      "chatUrl": "{{ widget.location_chat_url.best_value}}",
+      "widgetId": "{{widgetId}}",
       "insertAfter" : "{{widget.insert_after_element.value}}",
       "insertBefore" : "{{widget.insert_before_element.value}}",
       "targetElement" : "{{widget.target_element.value}}",
@@ -226,7 +225,7 @@
 
   {% if widget.location_tel.best_value != "" %}
   <p class="phone">
-    <a class="number contact-info-phone" aria-label="{{ widget.location_tel.best_value }}" href="tel:{{ widget.location_tel.best_value }}">
+    <a class="number" href="tel:{{ widget.location_tel.best_value }}">
       <span class="p-tel tel">{{ widget.location_tel.best_value }}</span>
     </a>
   </p>
