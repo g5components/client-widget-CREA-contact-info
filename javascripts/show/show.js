@@ -36,7 +36,7 @@ class ContactInfoWidget {
   }
 
   initChat(){
-    return this.widget.find('.contact-info-chat').click(e=> {
+    return this.widget.find('.crea-contact-info-chat').click(e=> {
       window.open(this.phoneOptions.chatUrl, 'Chat', "width=600, height=480, scrollbars=yes, resizable=yes");
       return e.preventDefault();
     });
@@ -65,4 +65,4 @@ class ContactInfoWidget {
   }
 }
 
-G5.loadWidgetConfigs('.contact-info .config', ContactInfoWidget);
+G5.loadWidgetConfigs('.crea-contact-info .config', ContactInfoWidget);

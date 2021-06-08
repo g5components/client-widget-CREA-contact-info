@@ -1,4 +1,4 @@
-{% capture widgetId %}contact-info-{{ widget.id }}{% endcapture %}
+{% capture widgetId %}crea-contact-info-{{ widget.id }}{% endcapture %}
 {% assign google_my_business = widget.google_cid.default_value_parsed %}
 {% assign show_social_links = widget.display_social_links.value_or_default %}
 {% assign facebook = widget.facebook_username.default_value_parsed %}
@@ -82,7 +82,7 @@
   </svg>
 {% endif %}
 
-<div class="contact-info h-c-ret v-c-ret h-card vcard widget {{widgetId}} {{widget.full_width_banner_style.value}}" id="{{widgetId}}">
+<div class="crea-contact-info h-c-ret v-c-ret h-card vcard widget {{widgetId}} {{widget.full_width_banner_style.value}}" id="{{widgetId}}">
   <script class="config" type="application/json">
     {
       "clientUrn": "{{ widget.client_urn.value_or_default }}",
@@ -118,28 +118,28 @@
     {% endif %}
 
     {% if widget.vertical_divider.value == "true" %}
-    .{{widgetId}}.contact-info .p-name,
-    .{{widgetId}}.contact-info .phone,
-    .{{widgetId}}.contact-info .h-adr,
-    .{{widgetId}}.contact-info .u-email,
-    .{{widgetId}}.contact-info .u-fax,
-    .{{widgetId}}.contact-info .g5-chat{
+    .{{widgetId}}.crea-contact-info .p-name,
+    .{{widgetId}}.crea-contact-info .phone,
+    .{{widgetId}}.crea-contact-info .h-adr,
+    .{{widgetId}}.crea-contact-info .u-email,
+    .{{widgetId}}.crea-contact-info .u-fax,
+    .{{widgetId}}.crea-contact-info .g5-chat{
       border-right: 2px solid {{widget.text_color.value}};
     }
-    .{{widgetId}}.contact-info p:last-child,
-    .{{widgetId}}.contact-info div:last-child{
+    .{{widgetId}}.crea-contact-info p:last-child,
+    .{{widgetId}}.crea-contact-info div:last-child{
       border-right: 0;
     }
     {% endif %}
 
     {% if widget.element_padding.value != "" %}
-    .{{widgetId}}.contact-info .p-name,
-    .{{widgetId}}.contact-info .phone,
-    .{{widgetId}}.contact-info .h-adr,
-    .{{widgetId}}.contact-info .u-email,
-    .{{widgetId}}.contact-info .u-fax,
-    .{{widgetId}}.contact-info .g5-chat,
-    .{{widgetId}}.contact-info .social-links{
+    .{{widgetId}}.crea-contact-info .p-name,
+    .{{widgetId}}.crea-contact-info .phone,
+    .{{widgetId}}.crea-contact-info .h-adr,
+    .{{widgetId}}.crea-contact-info .u-email,
+    .{{widgetId}}.crea-contact-info .u-fax,
+    .{{widgetId}}.crea-contact-info .g5-chat,
+    .{{widgetId}}.crea-contact-info .social-links{
       padding-left: {{widget.element_padding.value}};
       padding-right: {{widget.element_padding.value}};
     }
@@ -158,13 +158,13 @@
         line-height: 1.28em;
       }
       {% if widget.vertical_divider.value == "true" %}
-      .{{widgetId}}.contact-info .p-name,
-      .{{widgetId}}.contact-info .phone,
-      .{{widgetId}}.contact-info .h-adr,
-      .{{widgetId}}.contact-info .u-email,
-      .{{widgetId}}.contact-info .u-fax,
-      .{{widgetId}}.contact-info .g5-chat,
-      .{{widgetId}}.contact-info .social-links{
+      .{{widgetId}}.crea-contact-info .p-name,
+      .{{widgetId}}.crea-contact-info .phone,
+      .{{widgetId}}.crea-contact-info .h-adr,
+      .{{widgetId}}.crea-contact-info .u-email,
+      .{{widgetId}}.crea-contact-info .u-fax,
+      .{{widgetId}}.crea-contact-info .g5-chat,
+      .{{widgetId}}.crea-contact-info .social-links{
         border-right: none;
         padding: 6px 0;
       }
@@ -172,25 +172,25 @@
     }
 
     {% if widget.text_color.value != blank %}
-      .{{widgetId}}.contact-info.h-card.widget,
-      .{{widgetId}}.contact-info.h-card.widget a,
-      .{{widgetId}}.contact-info.h-card.widget a:hover,
-      .{{widgetId}}.contact-info.h-card.widget h4,
-      .{{widgetId}}.contact-info.h-card.widget p,
-      .{{widgetId}}.contact-info.h-card.widget span,
-      .{{widgetId}}.contact-info .social-links,
-      .{{widgetId}}.contact-info .social-links a:before{
+      .{{widgetId}}.crea-contact-info.h-card.widget,
+      .{{widgetId}}.crea-contact-info.h-card.widget a,
+      .{{widgetId}}.crea-contact-info.h-card.widget a:hover,
+      .{{widgetId}}.crea-contact-info.h-card.widget h4,
+      .{{widgetId}}.crea-contact-info.h-card.widget p,
+      .{{widgetId}}.crea-contact-info.h-card.widget span,
+      .{{widgetId}}.crea-contact-info .social-links,
+      .{{widgetId}}.crea-contact-info .social-links a:before{
         color: {{widget.text_color.value}} !important;
       }
     {% endif %}
 
     {% if widget.font_size.value != blank %}
-      .{{widgetId}}.contact-info.h-card.widget,
-      .{{widgetId}}.contact-info.h-card.widget a,
-      .{{widgetId}}.contact-info.h-card.widget a:hover,
-      .{{widgetId}}.contact-info.h-card.widget h4,
-      .{{widgetId}}.contact-info.h-card.widget p,
-      .{{widgetId}}.contact-info.h-card.widget span {
+      .{{widgetId}}.crea-contact-info.h-card.widget,
+      .{{widgetId}}.crea-contact-info.h-card.widget a,
+      .{{widgetId}}.crea-contact-info.h-card.widget a:hover,
+      .{{widgetId}}.crea-contact-info.h-card.widget h4,
+      .{{widgetId}}.crea-contact-info.h-card.widget p,
+      .{{widgetId}}.crea-contact-info.h-card.widget span {
         font-size: {{widget.font_size.value}};
       }
       .{{widgetId}}.full-width-banner .social-links a:before{
@@ -199,13 +199,13 @@
     {% endif %}
 
     {% if widget.background_color.value != blank %}
-      .{{widgetId}}.contact-info.h-card.widget {
+      .{{widgetId}}.crea-contact-info.h-card.widget {
         background-color: {{widget.background_color.value_or_default_parsed | rgba: widget.background_opacity.value_or_default}} !important;
       }
     {% endif %}
 
     {% if widget.border_width.value != blank %}
-      .{{widgetId}}.contact-info.h-card.widget {
+      .{{widgetId}}.crea-contact-info.h-card.widget {
         border-width: {{widget.border_width.value}} !important;
         border-color: {{widget.border_color.value}} !important;
         border-style: solid !important;
@@ -213,7 +213,7 @@
     {% endif %}
 
     {% if widget.border_radius.value != blank %}
-      .{{widgetId}}.contact-info.h-card.widget {
+      .{{widgetId}}.crea-contact-info.h-card.widget {
         border-radius: {{widget.border_radius.value}} !important;
       }
     {% endif %}
@@ -287,7 +287,7 @@
 
   {% if widget.location_chat_url.best_value != "" %}
   <p class="g5-chat chat">
-    <a class="contact-info-chat" href="{{ widget.location_chat_url.best_value}}">Live Chat</a>
+    <a class="crea-contact-info-chat" href="{{ widget.location_chat_url.best_value}}">Live Chat</a>
   </p>
   {% endif %}
 
