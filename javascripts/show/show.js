@@ -10,6 +10,7 @@ class ContactInfoWidget {
     this.moveWidgetInDom(this.configs);
     this.moveSocialLinks(this.configs);
     this.movePhoneNumber(this.configs);
+    this.setAccessiblePhoneNUmber();
   }
 
   moveWidgetInDom(configs){
@@ -62,6 +63,10 @@ class ContactInfoWidget {
         return result;
       })();
     }
+  }
+
+  setAccessiblePhoneNumber() {
+    new AccessiblePhoneNumber(this.phoneOptions.phoneNumber, `#${this.widgetId} .contact-info-phone`);
   }
 }
 
