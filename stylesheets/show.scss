@@ -1,16 +1,16 @@
-.contact-info .p-organization-name,
-.contact-info .h-adr,
-.contact-info .p-street-address,
-.contact-info .p-tel,
-.contact-info .p-url {
+.crea-contact-info .p-organization-name,
+.crea-contact-info .h-adr,
+.crea-contact-info .p-street-address,
+.crea-contact-info .p-tel,
+.crea-contact-info .p-url {
   display: block;
 }
-.contact-info p {
+.crea-contact-info p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.contact-info.full-width-banner{
+.crea-contact-info.full-width-banner{
   width: 100%;
   max-width: 100%;
   padding: 15px 30px 15px 0px;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contact-info.full-width-banner{
+  .crea-contact-info.full-width-banner{
     width: 100%;
     padding: 0 20px !important;
     p, div{
