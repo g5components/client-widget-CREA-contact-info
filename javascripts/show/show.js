@@ -4,7 +4,6 @@ class ContactInfoWidget {
     this.widgetId = config.widgetId;
     this.widget = $(`#${this.widgetId}`);
     this.phoneOptions = config;
-    this.phoneNumber = new PhoneNumber(this.phoneOptions, `#${this.widgetId}`);
     this.initChat();
     this.initSocialLinks();
     this.moveWidgetInDom(this.configs);
