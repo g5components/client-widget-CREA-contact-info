@@ -18,6 +18,9 @@
     "url": "https://github.com/g5components/client-widget-CREA-contact-info/issues"
   },
   "homepage": "https://github.com/g5components/client-widget-CREA-contact-info#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6"
+  },
   "devDependencies": {
     "cms-cli": "github:g5search/cms-cli#v1.2.5"
   }
